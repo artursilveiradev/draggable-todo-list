@@ -1,0 +1,64 @@
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin: 24px 0px;
+}
+
+.listItem {
+	align-items: flex-start;
+	background-color: var(--gray-500);
+	border: 1px solid var(--gray-400);
+	border-radius: 8px;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+	display: flex;
+	gap: 12px;
+	padding: 16px;
+}
+
+.checkbox {
+	cursor: pointer;
+}
+.checkbox > input[type="checkbox"] {
+	-webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+}
+.checkbox:hover > svg > path {
+	fill: var(--blue-dark);
+}
+.checkbox:hover > svg > g > path:not(:last-child) {
+	fill: var(--purple);
+}
+
+.taskDescription {
+	font-size: 14px;
+	width: 100%;
+}
+
+.taskDescriptionDone {
+	color: var(--gray-300);
+	text-decoration-line: line-through;
+}
+
+.taskDescriptionUndone {
+	color: var(--gray-100);
+}
+
+.button {
+	align-items: center;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	padding: 6px;
+}
+.button:hover {
+	background-color: var(--gray-400);
+	border-radius: 4px;
+}
+.button:hover > svg > path {
+	fill: var(--danger);
+}

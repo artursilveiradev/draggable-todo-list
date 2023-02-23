@@ -1,0 +1,25 @@
+.header {
+	background-color: var(--gray-700);
+	height: 200px;
+	left: 0px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.logo {
+	display: block;
+	margin: 72px auto 80px;
+}
+
+@media only screen and (max-width: 576px) {
+	.header {
+		height: 100px;
+	}
+
+	.logo {
+		height: 32px;
+		margin: 36px auto 40px;
+		width: 110px;
+	}
+}
